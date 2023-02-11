@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="parallax">
+        <h2 id="text">Parallax Website</h2>
+        <img src="file:///C:/Users/Raj/Downloads/monutain_01.png" id="m1">
+        <img src="file:///C:/Users/Raj/Downloads/trees_02.png" id="t2">
+        <img src="file:///C:/Users/Raj/Downloads/monutain_02.png" id="m2">
+        <img src="file:///C:/Users/Raj/Downloads/trees_01.png" id="t1">
+        <img src="file:///C:/Users/Raj/Downloads/man.png" id="man">
+        <img src="file:///C:/Users/Raj/Downloads/plants.png" id="plants">
+    </section>
+    <section class="sec">
+        <h2>Parallax  Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt, delectus sit rerum, iste sed in laboriosam nostrum labore quasi iusto. Quos sequi adipisci suscipit tempore, provident repellat nisi ipsum dolorum facilis dolores omnis sint cupiditate quasi. Ex dicta id in dolorum, aspernatur nesciunt unde! Tempora incidunt veniam, esse aut consequuntur quibusdam quod explicabo mollitia enim laboriosam quae quaerat saepe, exercitationem dolorem deserunt! Odit temporibus, reiciendis nobis sunt excepturi totam, facilis deserunt unde ducimus blanditiis quasi doloribus doloremque soluta tempore quisquam nihil libero illum distinctio minima voluptatibus animi odio. Eveniet provident cum vel ea dolore ipsum magnam esse hic sit
+            <br><br>Parallax graphics are ideal for storytelling. Good design is all about communication—and when we design websites, we want to communicate with our visitors and tell a compelling story about our product, service, or brand. Parallax scrolling allows us to immerse our website visitors in unique online experiences. It’s even possible to create a one-page website where visitors can read an entire story about your product or brand without navigating to multiple pages.
+
+            It helps to improve user engagement
+            Parallax graphics can be used to improve user engagement. Reducing your website’s bounce rate is one of the goals to be conscientious of in web design. Bounce rate measures the percentage of site visitors who either hit the “back” button or close the tab after checking just one page of your website. High bounce rates hurt your search ranking, so any actions you can take to bring that rate down are worthwhile. A well-crafted parallax page gives the user the type of dynamic experience that tends to keep them on the page longer. 
+    
+        </p>
+        
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js">
+       gsap.from("#m1",{
+        scrollTrigger : {
+            scrub: true
+        },
+        y:100,
+       })
+       gsap.from("#m2",{
+        scrollTrigger : {
+            scrub: true
+        },
+        y:50,
+       })
+       gsap.from("#t1",{
+        scrollTrigger : {
+            scrub: true
+        },
+        x:-50,
+       })
+       gsap.from("#t1",{
+        scrollTrigger : {
+            scrub: true
+        },
+        x:50,
+       })
+       gsap.from("#man",{
+        scrollTrigger : {
+            scrub: true
+        },
+        x:-250,
+       })
+       gsap.from("#plants",{
+        scrollTrigger : {
+            scrub: true
+        },
+        x:-50,
+       })
+       gsap.from("#text",{
+        scrollTrigger : {
+            scrub: true
+        },
+        x:600,
+       })
+      </script>
+      
+        
+</body>
+</html>
